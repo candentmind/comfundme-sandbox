@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from sandbox.comfundme.com/account/register by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Aug 2022 03:42:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Required meta tags-->
+	<meta charset="UTF-8">
+	<meta name="description" content="ComFundMe is a digital community contribution platform which allows the pooling
+     of funds in a safe, reliable and transparent manner.">
+	<meta content="Techvibes" name="author" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+	<!-- Title Page-->
+	<title></title>
+
+	<!-- Icons font CSS-->
+	<link href="../assets/vendor1/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+	<link href="../assets/vendor1/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+	<!-- Font special for pages-->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7cPT+Sans:400,400i,700,700i" rel="stylesheet"/>
+
+	<!-- Vendor CSS-->
+	<link href="../assets/vendor1/select2/select2.min.css" rel="stylesheet" media="all">
+	<link href="../assets/vendor1/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+
+	<!-- Main CSS-->
+	<link href="../assets/css1/main.css" rel="stylesheet" media="all">
+
+	<script src="../../ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script>
+        var myApp = angular.module("myapp", []);
+        myApp.controller("PasswordController", function($scope) {
+
+            var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+            var mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
+            var st = "";
+
+            $scope.passwordStrength = {
+                "float": "left",
+                "width": "100px",
+                "height": "10px",
+                "margin-left": "5px"
+            };
+
+            $scope.analyze = function(value) {
+                if(strongRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "green";
+                    $scope.st = "Strong";
+                } else if(mediumRegex.test(value)) {
+                    $scope.passwordStrength["background-color"] = "orange";
+                    $scope.st = "Medium";
+                } else {
+                    $scope.passwordStrength["background-color"] = "red";
+                    $scope.st = "Weak";
+                }
+            };
+
+        });
+	</script>
+
+	<style>
+		a {
+			text-decoration: none;
+		}
+		a + span {
+			display: none;
+		}
+		a:focus + span, a:hover + span {
+			display: inline;
+		}
+
+	</style>
+	<script>
+        // WRITE THE VALIDATION SCRIPT.
+        function isNumber(evt) {
+            var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+            if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+                return false;
+
+            return true;
+        }
+        function phonenumber(inputtxt)
+        {
+            var phoneno = /^\d{10}$/;
+            if(inputtxt.value.match(phoneno))
+            {
+                return true;
+            }
+            else
+            {
+                alert("Not a valid Phone Number");
+                return false;
+            }
+        }
+	</script>
+	<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $('#phoneNumber').bind('copy paste cut',function(e) {
+                e.preventDefault(); //disable cut,copy,paste
+                //alert('cut,copy & paste options are disabled !!');
+            });
+        });
+	</script>
+</head>
+
+<body ng-app="myapp">
+<div class="page-wrapper bg-yellow p-t-50 p-b-100">
+	<div class="wrapper wrapper--w350">
+		<div class="row justify-content-center" style="margin-bottom: 15px;">
+			<a href="../index.html"><img src="../assets/images/cfmw.png" alt="cfmw"></a>
+		</div>
+		<div class="card card-2">
+			<!--<div class="card-heading"></div>-->
+			<div class="card-body">
+				<div style="margin-bottom: 35px; line-height: 15px;">
+					<h3 style="font-weight: bold">Sign Up</h3>
+					<p class="text-left;" style="font-size: 11px">Welcome to the future of community funding</p>
+				</div>
+				<form id="registrationForm2" name="registrationForm2" action="https://sandbox.comfundme.com/account/register" onsubmit="return CheckPassword(document.registrationForm2.password)" method="post">
+					
+					
+					<div class="form-group">
+						<!--<label class="user-profile" for="fName">First Name *</label>-->
+						<input type="text" class="form-control form-control-solid placeholder-no-fix form-group" id="fName" name="firstName"
+							   style="border-radius: 20px;" placeholder="First Name" required="required" />
+						<span class="error-block" style="display: none" id="fNameError"></span>
+					</div>
+					<div class="form-group">
+						<!--<label class="user-profile" for="lName">Last Name *</label>-->
+						<input type="text" class="form-control form-control-solid placeholder-no-fix form-group" id="lName" name="lastName"
+							   style="border-radius: 20px;" placeholder="Last Name" required="required" />
+						<span class="error-block" style="display: none" id="lNameError"></span>
+					</div>
+					<div class="form-group">
+						<!--<label class="user-profile" for="eAddress">Email Address *</label>-->
+						<input type="email" class="form-control form-control-solid placeholder-no-fix form-group" id="eAddress" name="email" style="border-radius: 20px;"
+							   placeholder="Email" required="required" value=""/>
+						<span class="error-block" style="display: none" id="eAddressError2"></span>
+						
+					</div>
+					<div class="form-group">
+						<!--<label class="user-profile" for="pNumber">Phone Number *</label>-->
+						<input type="text" class="form-control form-control-solid placeholder-no-fix form-group" style="border-radius: 20px;" onpaste="return false"
+							   onautocomplete="return false" onblur="phonenumber(this.value)"
+							   onkeypress="javascript:return isNumber(event)" id="pNumber" name="phoneNumber" required placeholder="Mobile Number" value="" />
+						<span class="error-block" style="display: none" id="pNumberError2"></span>
+						
+					</div>
+					<div class="form-group" ng-controller="PasswordController">
+						<label class="user-profile" for="password"></label>
+						<a href="#" class="align-middle float-right"><i class="fa fa-question-circle" title=""></i></a>
+						<span style="font-size: small">Passwords should have:<br> 8 characters minumum; Upper case letter (A-Z) & lower case letter (a-z); Atleast one number (0-9); Atleast one special character</span>
+						<!--</label>-->
+						<input type="password" autocomplete="off" class="form-control form-control-solid placeholder-no-fix form-group" style="border-radius: 20px;"
+							   id="idpassword" name="password" ng-model="password" ng-change="analyze(password)" required="required" placeholder="Password" />
+						<div ng-style="passwordStrength"></div><span style="font-size: 10px; font-weight: bold; float: right" ng-model="st">{{st}}</span>
+						<span class="error-block" style="display: none" id="passwordError"></span>
+					</div>
+					<div class="form-group">
+						<!--<label class="user-profile" for="confirmPassword">Confirm Password *</label>-->
+						<input type="password" style="border-radius: 20px;" autocomplete="off" onblur="return check()"
+							   class="form-control form-control-solid placeholder-no-fix form-group"
+							   id="confirmPassword" name="confirmPassword" required="required" placeholder="Confirm Password" />
+						<span class="error-block" style="display: none" id="confirmPasswordError"></span>
+					</div>
+
+					<div class="p-t-30 align-content-center">
+						<button class="btn" style="border-radius: 20px; background: #f1c40f; color: #000;" type="submit">SIGN UP</button>
+					</div>
+				</form>
+				<div class="row justify-content-center" style="margin-top: 15px; color: #fff;">
+					<span style="font-size: 12px; font-weight: bold; color: #000000">Already have an account? <a style="color: #000000; font-weight: bold;" href="login.html"> SIGN IN</a></span>
+				</div>
+			</div>
+		</div>
+		<div style="margin-bottom:20px;" class="text-center">
+			<span style="font-size: 11px;">By Continuing, you agree to the ComFundMe terms and conditions</span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    function check(){
+        var input1 = document.getElementById('idpassword').value;
+        var input2 = document.getElementById('confirmPassword').value;
+        var but = document.getElementById('ok');
+
+        if(input1 != input2){
+            document.getElementById("confirmPasswordError").innerHTML="Passwords do not match";
+            document.getElementById("confirmPasswordError").style.display = "block";
+            //but.disabled = true;
+            return false;
+        }else{
+            document.getElementById("confirmPasswordError").innerHTML="";
+            document.getElementById("confirmPasswordError").style.display = "none";
+            //but.disabled = false;
+            return true;
+        }
+
+    }
+
+    function CheckPassword12(inputtxt)
+    {
+        var decimal=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+        if(inputtxt.value.match(decimal))
+        {
+            return true;
+        }
+        else
+        {
+            document.getElementById("passwordError").innerHTML="Password does not match required format";
+            document.getElementById("passwordError").style.display = "block";
+            return false;
+        }
+    }
+
+    function chpass(inputtxt) {
+        if (inputtxt.value.length == 0)
+        {
+            document.getElementById("passwordError").style.display = "none";
+        }
+    }
+</script>
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+
+        var url = document.location.toString();
+        if (url.match('#')) {
+            $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+        }
+
+        //Change hash for page-reload
+        $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').on('shown', function (e) {
+            window.location.hash = e.target.hash;
+        });
+    }
+
+</script>
+<script src="../../code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+//minimum 8 characters
+        var bad = /(?=.{8,}).*/;
+//Alpha Numeric plus minimum 8
+        var good = /^(?=\S*?[a-z])(?=\S*?[0-9])\S{8,}$/;
+//Must contain at least one upper case letter, one lower case letter and (one number OR one special char).
+        var better = /^(?=\S*?[A-Z])(?=\S*?[a-z])((?=\S*?[0-9])|(?=\S*?[^\w\*]))\S{8,}$/;
+//Must contain at least one upper case letter, one lower case letter and (one number AND one special char).
+        var best = /^(?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?[^\w\*])\S{8,}$/;
+
+        $('#idpassword').on('keyup', function () {
+            var password = $(this);
+            var pass = password.val();
+            var passLabel = $('[for="password"]');
+            var stength = 'Weak';
+            var pclass = 'danger';
+            if (best.test(pass) == true) {
+                stength = 'Very Strong';
+                pclass = 'success';
+            } else if (better.test(pass) == true) {
+                stength = 'Strong';
+                pclass = 'warning';
+            } else if (good.test(pass) == true) {
+                stength = 'Almost Strong';
+                pclass = 'warning';
+            } else if (bad.test(pass) == true) {
+                stength = 'Weak';
+            } else {
+                stength = 'Very Weak';
+            }
+
+            var popover = password.attr('data-content', stength).data('bs.popover');
+            popover.setContent();
+            popover.$tip.addClass(popover.options.placement).removeClass('danger success info warning primary').addClass(pclass);
+
+        });
+
+        $('input[data-toggle="popover"]').popover({
+            placement: 'top',
+            trigger: 'focus'
+        });
+    })
+</script>
+</body>
+
+
+<!-- Mirrored from sandbox.comfundme.com/account/register by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Aug 2022 03:42:26 GMT -->
+</html>
