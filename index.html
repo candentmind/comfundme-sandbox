@@ -67,149 +67,142 @@
         <!--</div>-->
         <div>
     <!-- start topbar section -->
-    <div class="topbar topbar-two fixed-top">
+    <div class="topbar bg-white py-0 fixed-top">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="page-logo">
+                <nav class="navbar navbar-expand-lg navbar-white bg-white" style="margin-bottom: initial; box-shadow: initial;">
+                    <div class="navbarpage-logo mr-auto">
                         <a href="index.html">
-                            <img src="assets/images/logo.png" alt="logo" class="logo-default" /> </a>
-                        <!--<h5><i class="fa fa-hand-o-right" aria-hidden="true"></i>Welcome to ComFundMe!</h5>-->
-                    <!--<div class="menu-toggler sidebar-toggler">
-                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
-                        <!--</div>-->
+                            <img src="assets/images/logo.png" alt="logo" class="logo-default" /></a>
                     </div>
-                    <!--<h5><i class="fa fa-hand-o-right" aria-hidden="true"></i>Welcome to ComFundMe!</h5>-->
-                </div>
-                <div class="col-md-8 login-area">
-                    <ul class="pull-right">
-                       <!-- <li>
-                            <div class="dropdown">
-                                <a href="#" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i>Language <i class="fa fa-angle-down"></i></a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">English</a>
+                    <!-- Toggler/collapsible Button -->
+                    <button class="toggle-button navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <div class="bars bar1"></div>
+                        <div class="bars bar2"></div>
+                        <div class="bars bar3"></div>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="collapsibleNavbar" style="flex-grow: initial !important;">
+                        <ul class="pull-right navbar-nav w-100 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link py-0" data-toggle="dropdown" href="campaign_home.html">About <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="about.html#product">The Product</a>
+                                        <a class="dropdown-item" href="company.html">The Company</a>
+                                        <a class="dropdown-item" href="about.html#howto">How to use</a>
+                                        <a class="dropdown-item" href="account/loginf17a.html">Pricing</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>-->
-                        <!--<li class=""><a th:href="@{/about}">About Us</a></li>-->
-                        
-                        <li class="abt">
-                            <div class="dropdown">
-                                <a data-toggle="dropdown" href="campaign_home.html">About <i class="fa fa-angle-down abt"></i></a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html#product">The Product</a>
-                                    <a class="dropdown-item" href="company.html">The Company</a>
-                                    <a class="dropdown-item" href="about.html#howto">How to use</a>
-                                    <a class="dropdown-item" href="account/loginf17a.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" data-toggle="dropdown" href="#">Discover <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="campaign_home.html">Fundraisers</a>
+                                        <a class="dropdown-item" href="about.html">About Us</a>
+                                        <a class="dropdown-item" href="faq.html">F.A.Qs</a>
+                                        <a class="dropdown-item" href="account/loginf17a.html">Success stories</a>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="dropdown">
-                                <a data-toggle="dropdown" href="#">Discover <i class="fa fa-angle-down abt"></i></a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="campaign_home.html">Fundraisers</a>
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <a class="dropdown-item" href="faq.html">F.A.Qs</a>
-                                    <a class="dropdown-item" href="account/loginf17a.html">Success stories</a>
-                                    <a class="dropdown-item" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#" data-toggle="dropdown">ComFund for <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="campaigns/all.html">Campaigns</a>
+                                    <a class="dropdown-item" href="account/loginf17a.html">Contributions</a>
+                                    <a class="dropdown-item" href="account/loginf17a.html">Groups</a>
+                                    <i role="separator" class="divider"></i>
+                                    <a class="dropdown-item" href="campaigns/all.html"><span style="color: #fad337">See all</span></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="abt">
-                            <div class="dropdown">
-                                <a href="#" data-toggle="dropdown">ComFund for <i class="fa fa-angle-down"></i></a>
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="campaigns/all.html">Campaigns</a>
-                                <a class="dropdown-item" href="account/loginf17a.html">Contributions</a>
-                                <a class="dropdown-item" href="account/loginf17a.html">Groups</a>
-                                <i role="separator" class="divider"></i>
-                                <a class="dropdown-item" href="campaigns/all.html"><span style="color: #fad337">See all</span></a>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li><a href="account/login.html"><i class="fa fa-user-circle abt"></i>Sign In </a></li>
-                        <li><a href="account/register.html" class="btn btn-donate-small-2">Create a Free Account</a></li>
-                    </ul>
-                </div>
-                <!-- search modal -->
-                <div class="modal fade login-popup-modal" id="loginmodal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <!--start login section-->
-                                <div class="login-section">
-                                    <div class="container">
-                                        <div class="row justify-content-center">
-                                            <div class="col-lg-6 col-md-9 col-12">
-                                                <div class="login-tab">
-                                                    <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    <div class="registration-tab">
-                                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                                            <li class="nav-item sign-in">
-                                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-sign-in"></i>Sign in</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-list-alt"></i>Sign up</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="tab-content" id="myTabContent">
-                                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                                            <p class="text-center tab-content-title">Sign in into your Account</p>
-                                                            <form action="https://sandbox.comfundme.com/account/login" method="post">
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="email">Email</label>
-                                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="password">Password</label>
-                                                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
-                                                                </div>
-                                                                <button type="submit" class="btn btn-yellow">Sign in</button>
-                                                            </form>
+                            </li>
+                            
+                            <li class="nav-item"><a class="nav-link py-0" href="account/login.html"><i class="fa fa-user-circle"></i>Sign In </a></li>
+                            <li class="nav-item"><a class="nav-link py-0" href="account/register.html" class="btn btn-donate-small-2">Create a Free Account</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- search modal -->
+                    <div class="modal fade login-popup-modal" id="loginmodal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!--start login section-->
+                                    <div class="login-section">
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-6 col-md-9 col-12">
+                                                    <div class="login-tab">
+                                                        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="registration-tab">
+                                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                <li class="nav-item sign-in">
+                                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-sign-in"></i>Sign in</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-list-alt"></i>Sign up</a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                                            <p class="text-center tab-content-title">Register an Account</p>
-                                                            <form id="registrationForm" action="https://sandbox.comfundme.com/account/register" method="post" >
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="firstName">First Name</label>
-                                                                    <input type="text" class="form-control" id="firstName" name="firstName"  placeholder="First Name" required="required" />
-                                                                    <span class="error-block" style="display: none" id="firstNameError"></span>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="lastName">Last Name</label>
-                                                                    <input type="text" class="form-control" id="lastName" name="lastName"  placeholder="Last Name" required="required" />
-                                                                    <span class="error-block" style="display: none" id="lastNameError"></span>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="emailAddress">Email Address</label>
-                                                                    <input type="email" class="form-control" id="emailAddress" name="email" placeholder="Email" required="required"/>
-                                                                    <span class="error-block" style="display: none" id="emailAddressError"></span>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="user-profile" for="phoneNumber">Phone Number</label>
-                                                                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Mobile Number" />
-                                                                    <span class="error-block" style="display: none" id="phoneNumberError"></span>
-                                                                </div>
-                                                                <button type="submit" class="btn btn-yellow">Sign up</button>
-                                                            </form>
+                                                        <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                                <p class="text-center tab-content-title">Sign in into your Account</p>
+                                                                <form action="https://sandbox.comfundme.com/account/login" method="post">
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="email">Email</label>
+                                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="password">Password</label>
+                                                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-yellow">Sign in</button>
+                                                                </form>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                                <p class="text-center tab-content-title">Register an Account</p>
+                                                                <form id="registrationForm" action="https://sandbox.comfundme.com/account/register" method="post" >
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="firstName">First Name</label>
+                                                                        <input type="text" class="form-control" id="firstName" name="firstName"  placeholder="First Name" required="required" />
+                                                                        <span class="error-block" style="display: none" id="firstNameError"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="lastName">Last Name</label>
+                                                                        <input type="text" class="form-control" id="lastName" name="lastName"  placeholder="Last Name" required="required" />
+                                                                        <span class="error-block" style="display: none" id="lastNameError"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="emailAddress">Email Address</label>
+                                                                        <input type="email" class="form-control" id="emailAddress" name="email" placeholder="Email" required="required"/>
+                                                                        <span class="error-block" style="display: none" id="emailAddressError"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="user-profile" for="phoneNumber">Phone Number</label>
+                                                                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Mobile Number" />
+                                                                        <span class="error-block" style="display: none" id="phoneNumberError"></span>
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-yellow">Sign up</button>
+                                                                </form>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--end login section-->
                                 </div>
-                                <!--end login section-->
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Header-area End-->
+                    <!-- Header-area End-->
+     
+                </nav>
             </div>
         </div>
     </div>
@@ -235,12 +228,12 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <div class="banner-content text-center">
-                                <h2 style="color: #000000; text-align: center; font-size: 45px; padding-bottom: 30px; opacity: 1" class="wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">...Coming together to make a difference</span></h2>
-                                <h4 style="color: black; padding-bottom: 30px">Comfundme is a platform that connects people, resources and </br> promotes transparency, accountability and trust while enabling support for causes,</br> crowdfunding and group savings</h4>
+                            <div class="banner-content text-center px-3">
+                                <h2 style="color: #4d4747; text-align: center; padding-bottom: 30px; opacity: 1" class="wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">...Coming together to make a difference</span></h2>
+                                <h4 style="color: #4d4747; padding-bottom: 30px">Comfundme is a platform that connects people, resources and </br> promotes transparency, accountability and trust while enabling support for causes,</br> crowdfunding and group savings</h4>
                                 <!--<p style="color: #000000; text-align: center; font-size: 22px;" class="wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">Here for every reason <span style="font-weight: bold"> to put money together</span></p>-->
-                                <a href="about.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">How it works</a>
-                                <a href="account/register.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Create a free account</a>
+                                <a href="about.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30"  data-wow-duration="1.5s" data-wow-delay=".9s">How it works</a>
+                                <a href="account/register.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30"  data-wow-duration="1.5s" data-wow-delay=".9s">Create a free account</a>
                             </div>
                         </div>
 
@@ -340,67 +333,69 @@
             <!-- end banner section  -->
             <!-- start intro section -->
 
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-<!--                <div class="col-4" style="padding-top: 20px; padding-left: 50px; width: 150px">-->
-
-<!--                    <div class="banner-content text-center" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; height: 300px">-->
-<!--                        <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">-->
-<!--                            <a th:href="@{/contribution_home}"><img th:src="@{/assets/images/intro/Adashe.svg}" width="100" height="100" alt="fail"/></a>-->
-<!--                        </div>-->
-<!--                        <a th:href="@{/contribution_home}">-->
-<!--                            <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Contributions</p>-->
-<!--                            <p class="tt" style="color: #000000; margin-bottom: 2px;">Explore innovative Contributions, Adashe, Ajo, Esusu</p>-->
-<!--                        </a>-->
-<!--                        <a th:href="@{/contribution_home}" style="margin-left: auto; margin-right: auto; color: black" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>-->
-
-<!--                    </div>-->
-<!--                </div>-->
-
-                <div class="col-4" style="padding-top: 20px; padding-left: 50px; width: 100px">
-
-                    <div class="banner-content text-center" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; height: 300px">
-                        <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
-                            <a href="contribution_home.html"><img src="assets/images/intro/Adashe.svg" width="100" height="100" alt="fail"/></a>
-                        </div>
-                        <a href="contribution_home.html">
-                            <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Contributions</p>
-                            <p class="tt" style="color: #000000; margin-bottom: 2px;">Explore innovative Contributions, Adashe, Ajo, Esusu</p>
-                        </a>
-                        <a href="contribution_home.html" style="margin-left: auto; margin-right: auto; color: black" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
-
-                    </div>
-                </div>
-
-                <div class="col-4" style="padding-top: 20px; width: 100px">
-
-                    <div class="banner-content text-center" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; height: 300px">
-                        <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
-                            <a href="group_home.html"><img src="assets/images/intro/Groups.svg" width="100" height="100" alt="fail"/></a>
-                        </div>
-                        <a href="group_home.html">
-                            <p class="t" style="color: #000000;  margin-bottom: 5px; font-weight: bold">Groups</p>
-                            <p class="tt" style="color: #000000; margin-bottom: 2px;">Create and manage a group association, alumni with accurate financial records</p>
-                        </a>
-                        <a href="group_home.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
-
-                    </div>
-                </div>
-
-                <div class="col-4" style="padding-top: 20px; padding-right: 50px; width: 100px">
-
-                    <div class="banner-content text-center" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; height: 300px">
-                        <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
-                            <a href="campaign_home.html"><img src="assets/images/intro/Campaigns.svg" width="100" height="100" alt="fail"/></a>
-                        </div>
-                        <a href="campaign_home.html">
-                            <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Campaigns</p>
-                            <p class="tt" style="color: #000000; margin-bottom: 2px">Fundraising for a social cause</p>
-                        </a>
-                        <a href="campaign_home.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
-
-                    </div>
-                </div>
+                    <!--                <div class="col-4" style="padding-top: 20px; padding-left: 50px; width: 150px">-->
+                    
+                    <!--                    <div class="banner-content text-center" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; height: 300px">-->
+                    <!--                        <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">-->
+                    <!--                            <a th:href="@{/contribution_home}"><img th:src="@{/assets/images/intro/Adashe.svg}" width="100" height="100" alt="fail"/></a>-->
+                    <!--                        </div>-->
+                    <!--                        <a th:href="@{/contribution_home}">-->
+                    <!--                            <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Contributions</p>-->
+                    <!--                            <p class="tt" style="color: #000000; margin-bottom: 2px;">Explore innovative Contributions, Adashe, Ajo, Esusu</p>-->
+                    <!--                        </a>-->
+                    <!--                        <a th:href="@{/contribution_home}" style="margin-left: auto; margin-right: auto; color: black" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30 bbb"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>-->
+                    
+                    <!--                    </div>-->
+                    <!--                </div>-->
+                    
+                                    <div class="col-md-4" style="padding-top: 20px;">
+                    
+                                        <div class="banner-content text-center h-100 d-flex flex-column" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+                                            <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
+                                                <a href="contribution_home.html"><img src="assets/images/intro/Adashe.svg" width="100" height="100" alt="fail"/></a>
+                                            </div>
+                                            <a href="contribution_home.html">
+                                                <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Contributions</p>
+                                                <p class="tt" style="color: #000000; margin-bottom: 2px;">Explore innovative Contributions, Adashe, Ajo, Esusu</p>
+                                            </a>
+                                            <a href="contribution_home.html" style="margin-left: auto; margin-right: auto; color: black" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
+                    
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-md-4" style="padding-top: 20px;">
+                    
+                                        <div class="banner-content text-center h-100 d-flex flex-column" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+                                            <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
+                                                <a href="group_home.html"><img src="assets/images/intro/Groups.svg" width="100" height="100" alt="fail"/></a>
+                                            </div>
+                                            <a href="group_home.html">
+                                                <p class="t" style="color: #000000;  margin-bottom: 5px; font-weight: bold">Groups</p>
+                                                <p class="tt" style="color: #000000; margin-bottom: 2px;">Create and manage a group association, alumni with accurate financial records</p>
+                                            </a>
+                                            <a href="group_home.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
+                    
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-md-4" style="padding-top: 20px;">
+                    
+                                        <div class="banner-content text-center h-100 d-flex flex-column" style="background: #fdd835; border-radius: 5%; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+                                            <div class="ddd" style="background: #FFFFFF; margin-bottom: 10px; margin-left: auto; margin-right: auto; border-radius: 50%; width: 125px; height: 125px;">
+                                                <a href="campaign_home.html"><img src="assets/images/intro/Campaigns.svg" width="100" height="100" alt="fail"/></a>
+                                            </div>
+                                            <a href="campaign_home.html">
+                                                <p class="t" style="color: #000000; margin-bottom: 5px; font-weight: bold">Campaigns</p>
+                                                <p class="tt" style="color: #000000; margin-bottom: 2px">Fundraising for a social cause</p>
+                                            </a>
+                                            <a href="campaign_home.html" style="margin-left: auto; margin-right: auto;" class="wow animated fadeInLeft btn btn-donate-small-2 btn-active btn-transparent mr30"  data-wow-duration="1.5s" data-wow-delay=".9s">Learn More</a>
+                    
+                                        </div>
+                                    </div>
+                                </div>
             </div>
 
 
@@ -1003,11 +998,11 @@
             <!--</div>-->
             <!-- endl blog section -->
 
-            <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-            <link href="assets/css1/bootstrap.min.css" rel="stylesheet" media="all">
-            <script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+            <!-- <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <link href="assets/css1/bootstrap.min.css" rel="stylesheet" media="all"> -->
+            <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
             <script src="assets/js1/bootstrap.min.js"></script>
-            <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 
             <div class="container">
                 <!-- Trigger the modal with a button -->
@@ -1344,6 +1339,23 @@
                     });
             }
             /*]]>*/
+
+            /************************************************* 
+                Display navigation list with sliding motion on 
+                hamburger button icon click 
+            **************************************************/
+            function toggleMenu() {
+                let hamburgerButton = $('.toggle-button');
+                hamburgerButton.toggleClass("change");
+
+                // Prevent the body from scrolling if the 
+                // overlay menu is opened
+                if(hamburgerButton.hasClass("change"))
+                    document.body.style.overflow = "hidden";
+                else
+                    document.body.style.overflow = "";
+            }
+            $(".toggle-button").click(toggleMenu);
         </script>
         <!-- Page Scripts -->
         <div>
