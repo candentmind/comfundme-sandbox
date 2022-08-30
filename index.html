@@ -1356,6 +1356,18 @@
                     document.body.style.overflow = "";
             }
             $(".toggle-button").click(toggleMenu);
+
+            /************************************************* 
+                Hide submenu list when the mouse leaves
+                a previously hovered nav-item
+            **************************************************/
+            let navItems = document.querySelectorAll('.nav-item')
+            navItems.forEach(item => {
+                item.addEventListener('mouseout', (e) => {
+	            if(document.documentElement.clientWidth >= 992) // do this on wider viewports only
+			        e.currentTarget.children[1].children[0].classList.remove('show')
+                })
+            })
         </script>
         <!-- Page Scripts -->
         <div>
