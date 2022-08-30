@@ -69,11 +69,10 @@
     background: #fff;
 }
 
-#sidebar ul li.active>a,
+/* #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    /* color: #fff; */
     background: #fdd835;
-}
+} */
 
 a[data-toggle="collapse"] {
     position: relative;

@@ -5837,4 +5837,23 @@ login-section
     background-color: #fdd835;
     border-radius: 6px;
   }
+
+  .nav-item:hover > .nav-link{
+    background-color: #fdd835;
+  }
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    /* min-width: auto; */
+    animation: fadeDropdown 0.2s;
+  }
+}
+
+@keyframes fadeDropdown {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
