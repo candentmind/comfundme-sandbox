@@ -1530,7 +1530,7 @@ p {
 .helping-area .banner-count span.counter:after {
   content: "%";
   position: absolute;
-  rigit: 0;
+  right: 0;
   top: 0;
   color: #252525;
   font-size: 36px;
@@ -5843,8 +5843,11 @@ login-section
   }
   .nav-item:hover .dropdown-menu {
     display: block;
-    /* min-width: auto; */
     animation: fadeDropdown 0.2s;
+  }
+  .nav-item:hover .fa-angle-down{
+    transition: all 0.3s;
+    transform: rotate(-180deg);
   }
 }
 
