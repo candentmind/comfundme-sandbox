@@ -5830,6 +5830,16 @@ login-section
   #collapsibleNavbar .dropdown-menu{
     text-align: center;
   }
+
+  .nav-item:last-of-type{
+    width: fit-content;
+    margin: 0 auto !important;
+  }
+  .nav-item:last-of-type > .nav-link{
+    padding: 0.8em;
+    background-color: #fdd835;
+    border-radius: 6px;
+  }
 }
 
 @media all and (min-width: 992px) {
