@@ -5145,6 +5145,22 @@ login-section
   font-style: italic;
 }
 
+.widget {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media all and (min-width: 768px) {
+  .footer-section .row{
+    position: relative;
+  }
+
+  .widget-contact-icon{
+    position: absolute;
+    left: 50%;
+    width: 100%
+  }
+}
 .widget.widget-about h4 {
   font-size: 22px;
   margin-bottom: 21px;
@@ -5625,12 +5641,6 @@ login-section
 }
 
 @media all and (max-width: 991px) {
-  .widget-about {
-    margin-bottom: 50px;
-  }
-  .widget-contact {
-    margin-bottom: 50px;
-  }
   .sidebar-area {
     margin-bottom: 60px;
   }
